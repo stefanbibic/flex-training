@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import Home from './components/Home';
+import NavBar from './components/NavBar';
+import FlexContainer from './components/FlexContainer';
+import FlexChildren from './components/FlexChildren';
+
 import './app.scss';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Flex training
-        </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route path="/flexContainer">
+            <FlexContainer />
+          </Route>
+
+          <Route path="/flexChildren">
+            <FlexChildren />
+          </Route>
+
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  background-color: #004851;
+}
+
+.navbar__link {
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #001b1f;
+    cursor: pointer;
+  }
+}
+
+.navbar__link--active {
+  background-color: #001b1f;
+}
+
+.navbar__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
