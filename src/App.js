@@ -5,6 +5,7 @@ import Home from './components/Home';
 import NavBar from './components/NavBar';
 import FlexContainer from './components/FlexContainer';
 import FlexChildren from './components/FlexChildren';
+import Nesting from './components/Nesting';
 
 import './app.scss';
 
@@ -20,6 +21,10 @@ const App = () => {
 
           <Route path="/flexChildren">
             <FlexChildren />
+          </Route>
+
+          <Route path="/nesting">
+            <Nesting />
           </Route>
 
           <Route path="/">

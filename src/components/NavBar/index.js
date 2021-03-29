@@ -41,6 +41,13 @@ const Navbar = () => {
         })}>
         Flex Children
       </Link>
+      <Link
+        to="/nesting"
+        className={classNames('navbar__link', {
+          'navbar__link--active': pathname === '/nesting',
+        })}>
+        Nesting
+      </Link>
     </div>
   );
 };

@@ -18,7 +18,9 @@ Once inside the flex container child components can also have properties that ch
 2. flex-direction
 
 - row (default)
+- row-reverse
 - column
+- column-reverse
 
 3. flex-wrap
 
@@ -26,7 +28,7 @@ Once inside the flex container child components can also have properties that ch
 - wrap
 - wrap-reverse
 
-4. justified-content
+4. justify-content
 
 - flex-start (default)
 - flex-end
